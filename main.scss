@@ -5,10 +5,11 @@ $back-gray: #c6c6c6;
 $medium-gray: #8a8a8a;
 
 body {
+    font-family: 'Fira Sans', sans-serif;
     background-color: $very-light-gray;
 }
 
-h1, h3 {
+h1, h2, h3 {
     text-align: center;
     font-weight: bold;
     color: $dark-gray;
@@ -69,4 +70,20 @@ footer {
 .source {
     margin: 0;
     padding: 0;
+}
+
+.cli {
+    margin: 1em;
+    padding: 0.25em;
+    background-color: $back-gray;
+    border-radius: 0.2em;
+    border: 0.1em solid $dark-gray;
+}
+
+.command {
+    font-family: 'Fira Mono', monospace;
+}
+
+.prompt {
+    padding: 0em 0.5em;
 }
