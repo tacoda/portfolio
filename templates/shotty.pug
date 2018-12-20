@@ -1,0 +1,21 @@
+html
+  include partials/head.pug
+  body
+    h1.title Shotty
+    include partials/nav.pug
+    div.container
+      h2.section Requirements
+      ul
+        li Python 3
+        li AWS CLI
+      h2.section Installation
+      p Install with pip
+      div.cli
+        i.fas.fa-dollar-sign.prompt
+        span.command pip3 install https://s3.amazonaws.com/tacoda-dist/shotty/shotty-0.1-py3-none-any.whl
+      h2.section Usage
+      p List EC2 instances
+      div.cli
+        i.fas.fa-dollar-sign.prompt
+        span.command shotty instances list
+    footer &copy; Ian Johnson

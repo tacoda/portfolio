@@ -16,9 +16,9 @@ sass.render({file: 'style.scss'}, function(error, result) {
   }
 });
 
-var compile = pug.compileFile('templates/index.pug');
+var compileIndex = pug.compileFile('templates/index.pug');
 
-pug.render(compile(), {}, function(error, result) {
+pug.render(compileIndex(), {}, function(error, result) {
   if(!error){
     // No errors during the compilation, write this result on the disk
     fs.writeFile('public/index.html', result, function(err){
@@ -30,4 +30,20 @@ pug.render(compile(), {}, function(error, result) {
       }
     });
   }
-})
+});
+
+var compileShotty = pug.compileFile('templates/shotty.pug');
+
+pug.render(compileShotty(), {}, function(error, result) {
+  if(!error){
+    // No errors during the compilation, write this result on the disk
+    fs.writeFile('public/projects/shotty.html', result, function(err){
+      if(!err){
+        //file written on disk
+        console.log('file written to disk');
+      } else {
+        console.log(err);
+      }
+    });
+  }
+});
