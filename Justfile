@@ -1,9 +1,7 @@
-sass-bin = `npm get prefix` + '/bin/sass'
-
 # Serve the site
 serve:
-    php -S localhost:8080
+    php -S localhost:8080 -t public
 
-# Compile sass
-sass +FLAGS='':
-    {{ sass-bin }} {{FLAGS}} main.scss assets/main.css
+# Build the site
+build:
+    node build.js
