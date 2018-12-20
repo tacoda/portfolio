@@ -1,6 +1,6 @@
 # Serve the site
 serve:
-    php -S localhost:8080 -t public
+    node serve.js
 
 # Build the site
 build:
