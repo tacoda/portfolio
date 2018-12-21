@@ -1,12 +1,12 @@
 extends layout.pug
 
 block title
-  h1.title Shotty
+  h1.title WebIt
 
 block content
   div.container
     h2.section Description
-    p Shotty is a CLI tool for AWS EC2 instance volume snapshots.
+    p WebIt is a CLI tool that will sync a local directory to an S3 bucket. It will also optionally configure Route 53 and CloudFront.
     h2.section Requirements
     ul
       li Python 3
@@ -15,9 +15,9 @@ block content
     p Install with pip
     div.cli
       i.fas.fa-dollar-sign.prompt
-      span.command pip3 install https://s3.amazonaws.com/tacoda-dist/shotty/shotty-0.1-py3-none-any.whl
+      span.command pip3 install https://s3.amazonaws.com/tacoda-dist/webit...
     h2.section Usage
-    p List EC2 instances
+    p List S3 buckets
     div.cli
       i.fas.fa-dollar-sign.prompt
-      span.command shotty instances list
+      span.command webit list-buckets
