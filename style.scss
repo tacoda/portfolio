@@ -66,24 +66,18 @@ footer {
     padding: 1em;
     font-weight: bold;
 
-    h2 a {
+    h2 {
       color: $project-title;
 
       // :hover, :active {
       //   color: $bookend-text;
       // }
     }
-}
 
-.sourceList {
-    margin: 0;
-    padding: 0;
-    padding-top: 0.5em;
-}
-
-.source {
-    margin: 0;
-    padding: 0;
+    &:hover, &:active {
+      color: $project;
+      background-color: $project-text;
+    }
 }
 
 .paragraph {
