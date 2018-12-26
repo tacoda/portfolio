@@ -59,19 +59,29 @@ footer {
 }
 
 .column {
+    margin: 2em;
+    padding: 1em;
+}
+
+.project {
     color: $project-text;
     background-color: $project;
     border-radius: 0.5em;
-    margin: 2em;
-    padding: 1em;
-    font-weight: bold;
 
     h2 {
       color: $project-title;
+      font-weight: bold;
+      padding: 1em;
 
       // :hover, :active {
       //   color: $bookend-text;
       // }
+    }
+
+    .paragraph {
+      text-align: center;
+      font-style: italic;
+      padding: 1em;
     }
 
     &:hover, &:active {
@@ -80,12 +90,12 @@ footer {
     }
 }
 
-.paragraph {
-  margin: 1em;
+.section-text {
+    margin: 1.2em;
 }
 
 .requirements {
-  margin: 1em;
+    margin: 1em;
 }
 
 .cli {
