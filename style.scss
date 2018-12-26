@@ -27,7 +27,7 @@ h2 {
 }
 
 nav {
-    border-bottom: solid $gray 0.2em;
+    border-bottom: solid $gray 0.15em;
 
     ul {
         padding-bottom: 1em;
@@ -84,6 +84,14 @@ footer {
 .source {
     margin: 0;
     padding: 0;
+}
+
+.paragraph {
+  margin: 1em;
+}
+
+.requirements {
+  margin: 1em;
 }
 
 .cli {
