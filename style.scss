@@ -1,26 +1,32 @@
-$dark-gray: #424242;
-$very-light-gray: #f7f7f7;
-$light-gray: #e6e6e6;
-$back-gray: #c6c6c6;
-$medium-gray: #8a8a8a;
+$background: #eeead6;
+$bookend: #979c57;
+$bookend-text: #3c5830;
+$project: #6ba4d2;
+$project-text: #01417a;
+$project-title: #ffffff;
+$separator: #424242;
 
 body {
     font-family: 'Fira Sans', sans-serif;
-    background-color: $very-light-gray;
+    background-color: $background;
 }
 
-h1, h2, h3 {
+h1 {
+  text-align: center;
+  font-weight: bold;
+  color: $bookend-text;
+  font-size: 1.5em;
+}
+
+h2 {
     text-align: center;
     font-weight: bold;
-    color: $dark-gray;
-}
-
-h3 {
-    padding: 0.5em;
+    color: $project-text;
+    font-size: 1.2em;
 }
 
 nav {
-    border-bottom: solid $dark-gray 0.1em;
+    border-bottom: solid $separator 0.1em;
 
     ul {
         padding-bottom: 1em;
@@ -38,29 +44,33 @@ nav {
 }
 
 footer {
-    background-color: $back-gray;
+    color: $bookend-text;
+    background-color: $bookend;
     padding: 1em;
     font-weight: bold;
     text-align: center;
 }
 
 .title {
-    background-color: $back-gray;
+    color: $bookend-text;
+    background-color: $bookend;
     padding: 1em;
 }
 
 .column {
-    color: #424242;
-    background-color: $light-gray;
+    color: $project-text;
+    background-color: $project;
     border-radius: 0.5em;
     margin: 2em;
     padding: 1em;
     font-weight: bold;
 
-    .paragraph {
-        color: $medium-gray;
-        // background-color: $very-light-gray;
-        // border-radius: 0.5em;
+    h2 a {
+      color: $project-title;
+
+      // :hover, :active {
+      //   color: $bookend-text;
+      // }
     }
 }
 
@@ -78,9 +88,10 @@ footer {
 .cli {
     margin: 1em;
     padding: 0.25em;
-    background-color: $back-gray;
+    color: $background;
+    background-color: $project;
     border-radius: 0.2em;
-    border: 0.1em solid $dark-gray;
+    border: 0.1em solid $project-text;
 }
 
 .command {
