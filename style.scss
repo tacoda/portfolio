@@ -4,10 +4,11 @@ $bookend-text: #3c5830;
 $project: #6ba4d2;
 $project-text: #01417a;
 $project-title: #ffffff;
-$separator: #424242;
+$gray: #545454;
 
 body {
     font-family: 'Fira Sans', sans-serif;
+    color: $gray;
     background-color: $background;
 }
 
@@ -26,7 +27,7 @@ h2 {
 }
 
 nav {
-    border-bottom: solid $separator 0.1em;
+    border-bottom: solid $gray 0.2em;
 
     ul {
         padding-bottom: 1em;
