@@ -14,6 +14,11 @@ fs.copyFile('favicon.ico', 'public/favicon.ico', (err) => {
   console.log('Created: public/favicon.ico');
 });
 
+fs.copyFile('cv.pdf', 'public/cv.pdf', (err) => {
+  if (err) throw err;
+  console.log('Created: public/cv.pdf');
+});
+
 var assetsDir = './public/assets';
 
 if(!fs.existsSync(assetsDir)) {
