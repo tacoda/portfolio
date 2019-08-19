@@ -19,3 +19,16 @@ Publish the site:
 ```sh
 script/publish.sh
 ```
+
+## Common Make Targets
+
+### all
+
+### build
+
+### clean
+
+### publish
+
+### server
+

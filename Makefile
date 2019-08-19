@@ -1,17 +1,23 @@
-build:
+.PHONY : all build clean fresh server
+
+all : build-project build
+
+build : clean
 	node build.js
 
-build-project:
-	npm install
-
-clean:
+clean :
 	rm -rf public
 
-clean-project:
+fresh : fresh-clean fresh-build build
+
+fresh-clean :
 	rm -rf node_modules
 
-server:
+fresh-build :
+	npm install
+
+server :
 	node server.js
 
-publish:
+publish :
 	echo "Publish!"
