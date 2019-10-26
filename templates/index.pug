@@ -1,45 +1,79 @@
 extends layout.pug
 
-block title
-  h1.title Ian Johnson
-
 block content
   div.container
-    div.columns
-      div.column
-        a(href='/shotty.html')
-          div.project
-            h2 📸 Shotty
-            p.paragraph Shotty is a command line tool for AWS EC2 volume snapshots.
-            p.paragraph Shotty is built with Python3 using the Click package.
-      div.column
-        a(href='/webit.html')
-          div.project
-            h2 🕸️ WebIt
-            p.paragraph WebIt is a command line tool that will deploy a directory to a webpage.
-            p.paragraph WebIt is built with Python3 using the Click package.
-    div.columns
-      div.column
-        a(href='https://gitlab.com/tacoda/jaws')
-          div.project
-            h2 🦈 Jaws
-            p.paragraph Jaws is a command line tool that manages AWS resources.
-            p.paragraph Jaws is built with Rust using the StructOpt crate.
-            p.paragraph Jaws is still under active development and aspires to be able to completely replace the AWS CLI.
-      div.column
-        a(href='/')
-          div.project
-            h2 🦁 Roarum
-            p.paragraph Roarum is an online community forum.
-            p.paragraph Roarum is built with Ruby on Rails.
-    //- div.columns
-    //-   div.column
-    //-     a(href='/')
-    //-       div.project
-    //-         h2 💼 HireMe
-    //-         p.paragraph A job search website built with Django.
-    //-   div.column
-    //-     a(href='/')
-    //-       div.project
-    //-         h2 💬 powwow
-    //-         p.paragraph A chat application built with React.
+    section.section
+      h1.title About Me
+      div.about
+        p.paragraph Please pardon typos, broken links, and other dust as this website is still being updated.
+        p.paragraph I am a full-stack developer.
+    section.section
+      h1.title Portfolio
+      div.columns
+        div.column
+          div.card
+            div.card-content
+              div.media-content
+                p.title.is-4 Shotty
+              div.content
+                p A command line tool for AWS EC2 volume snapshots.
+                p
+                  a(href='https://github.com/tacoda/shotty')
+                    i(class='fas fa-code') &nbsp; Repository
+        div.column
+          div.card
+            div.card-content
+              div.media-content
+                p.title.is-4 WebIt
+              div.content
+                p A command line tool that will deploy a directory to a webpage.
+                p
+                  a(href='https://github.com/tacoda/webit')
+                    i(class='fas fa-code') &nbsp; Repository
+        div.column
+          div.card
+            div.card-content
+              div.media-content
+                p.title.is-4 Jaws
+              div.content
+                p A command line tool to perform tasks with AWS.
+                p
+                  a(href='https://github.com/tacoda/jaws')
+                    i(class='fas fa-code') &nbsp; Repository
+      div.columns
+        div.column
+          div.card
+            div.card-content
+              div.media-content
+                p.title.is-4 Roarum
+              div.content
+                p An online community forum built with Rails.
+                p
+                  a(href='https://github.com/tacoda/roarum')
+                    i(class='fas fa-code') &nbsp; Repository
+                p
+                  a(href='https://gentle-wave-73427.herokuapp.com/')
+                    i(class='fas fa-link') &nbsp; Link
+        div.column
+          div.card
+            div.card-content
+              div.media-content
+                p.title.is-4 Bingo
+              div.content
+                p An online bingo game built with Elixir.
+                p
+                  a(href='https://github.com/tacoda/bingo')
+                    i(class='fas fa-code') &nbsp; Repository
+                p
+                  a(href='https://warm-scrubland-51864.herokuapp.com/')
+                    i(class='fas fa-link') &nbsp; Link
+        div.column
+          div.card
+            div.card-content
+              div.media-content
+                p.title.is-4 Palindrome
+              div.content
+                p A cloud function that determines if the input is a palindrome.
+                div
+                  input.input(type='text')
+                  button.button#palindrome Check

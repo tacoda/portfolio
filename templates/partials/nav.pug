@@ -1,14 +1,12 @@
-nav
-  ul
-    li
-      i(class='fas fa-home') &nbsp;
-      a(href='/') Home
-    li
-      i(class='fas fa-user') &nbsp;
-      a(href='/about.html') About Me
-    li
-      i(class='fas fa-envelope') &nbsp;
-      a(href='mailto:tacoda@pm.me') tacoda@pm.me
-    li
-      i(class='fas fa-file-alt') &nbsp;
-      a(href='/cv.pdf') CV
+nav.navbar
+  div.navbar-brand
+  div.navbar-menu
+    div.navbar-start
+      a.navbar-item(href='/')
+        i(class='fas fa-home') &nbsp; Home
+      a.navbar-item(href='mailto:tacoda@pm.me')
+        i(class='fas fa-envelope') &nbsp; tacoda@pm.me
+      a.navbar-item(href='/cv.pdf')
+        i(class='fas fa-file-alt') &nbsp; CV
+      a.navbar-item(href='https://github.com/tacoda')
+        i(class='fab fa-github') &nbsp; GitHub

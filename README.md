@@ -32,3 +32,4 @@ script/publish.sh
 
 ### server
 
+NOTE: Since I will be adding AJAX later, should I just make this a Javascript app? Should I use Vue? Or just Axios? Or just the fetch api?

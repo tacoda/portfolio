@@ -1,115 +1,123 @@
-$background: #eeead6;
-$bookend: #979c57;
-$bookend-text: #3c5830;
-$project: #6ba4d2;
-$project-text: #01417a;
-$project-title: #ffffff;
-$gray: #545454;
+// $background: #eeead6;
+// $bookend: #979c57;
+// $bookend-text: #3c5830;
+// $project: #6ba4d2;
+// $project-text: #01417a;
+// $project-title: #ffffff;
+// $gray: #545454;
 
 body {
     font-family: 'Fira Sans', sans-serif;
-    color: $gray;
-    background-color: $background;
+//     color: $gray;
+//     background-color: $background;
 }
 
-h1 {
-  text-align: center;
-  font-weight: bold;
-  color: $bookend-text;
-  font-size: 1.5em;
+.avatar {
+    border-radius: 0.5rem;
 }
 
-h2 {
-    text-align: center;
-    font-weight: bold;
-    color: $project-text;
-    font-size: 1.2em;
-}
+// h1 {
+//   text-align: center;
+//   font-weight: bold;
+//   color: $bookend-text;
+//   font-size: 1.8em;
+// }
 
-nav {
-    border-bottom: solid $gray 0.15em;
+// h2 {
+//     text-align: center;
+//     font-weight: bold;
+//     color: $project-text;
+//     font-size: 1.4em;
+// }
 
-    ul {
-        padding-bottom: 1em;
-    }
+// nav {
+//     border-bottom: solid $gray 0.15em;
 
-    li {
-        margin-left: 1em;
-        display: inline-block;
+//     ul {
+//         padding-bottom: 1em;
+//     }
 
-        // :hover {
-        //     color: white;
-        //     background-color: blue;
-        // }
-    }
-}
+//     li {
+//         margin-left: 1em;
+//         display: inline-block;
 
-footer {
-    color: $bookend-text;
-    background-color: $bookend;
-    padding: 1em;
-    font-weight: bold;
-    text-align: center;
-}
+//         // :hover {
+//         //     color: white;
+//         //     background-color: blue;
+//         // }
+//     }
+// }
 
-.title {
-    color: $bookend-text;
-    background-color: $bookend;
-    padding: 1em;
-}
+// // .footer {
+// //     color: $bookend-text;
+// //     background-color: $bookend;
+// //     margin-top: 3em;
+// //     font-weight: bold;
+// // }
 
-.column {
-    margin: 2em;
-    padding: 1em;
-}
+// // .title {
+// //     color: $bookend-text;
+// //     background-color: $bookend;
+// //     padding: 1em;
+// // }
 
-.project {
-    color: $project-text;
-    background-color: $project;
-    border-radius: 0.5em;
+// .column {
+//     margin: 2em;
+//     padding: 1em;
+//     text-align: center;
+// }
 
-    h2 {
-      color: $project-title;
-      font-weight: bold;
-      padding: 1em;
+// .about {
+//     width: 60%;
+//     margin: 0 auto;
+//     text-align: center; // TODO: delete me later
+// }
 
-      // :hover, :active {
-      //   color: $bookend-text;
-      // }
-    }
+// .project {
+//     color: $project-text;
+//     background-color: $project;
+//     border-radius: 0.5em;
+//     border: 0.1em solid $project-text;
 
-    .paragraph {
-      font-style: italic;
-      padding: 1em;
-    }
+//     h2 {
+//       color: $project-title;
+//       font-weight: bold;
+//       padding: 0.5em;
+//     }
 
-    &:hover, &:active {
-      color: $project;
-      background-color: $project-text;
-    }
-}
+//     .column {
+//         background-color: $background;
+//         border-radius: 0.5em;
+//         border: 0.1em solid $project-text;
 
-.section-text {
-    margin: 1.2em;
-}
+//         a {
+//           color: $project-text;
+//         }
 
-.requirements {
-    margin: 1em;
-}
+//         &:hover, &:active {
+//           background-color: white;
+//         }
+//     }
 
-.cli {
-    margin: 1em;
-    padding: 0.25em;
-    color: $background;
-    background-color: $project;
-    border-radius: 0.2em;
-    border: 0.1em solid $project-text;
-}
+//     .input-line {
+//         width: 80%;
+//         margin: 0 auto;
+//     }
 
-.command {
-    font-family: 'Fira Mono', monospace;
-}
+//     .button {
+//         margin: 0.5em;
+//     }
+// }
 
-.prompt {
-    padding: 0em 0.5em;
-}
+// .paragraph {
+//   font-style: italic;
+//   padding: 0.5em;
+// }
+
+// .error {
+//     color: red;
+// }
+
+// .filler {
+//     height: 10em;
+// }
