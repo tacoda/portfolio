@@ -4,39 +4,73 @@ block content
   div.container
     section.section
       h1.title About Me
-      div.about
-        p.paragraph Please pardon typos, broken links, and other dust as this website is still being updated.
-        p.paragraph I am a full-stack developer.
+      div
+        p I am a full-stack developer with an interest in artificial intelligence, information security, data privacy, command line tools, web performance and scaling, and cloud computing.
     section.section
       h1.title Portfolio
+      div.content
+        div.card
+          div.columns
+            div.column
+              div.card-content
+                div.media-content
+                  p.title.is-2 WebIt
+                div.content
+                  div.tags
+                    span.tag.is-python Python
+                    span.tag.is-dark Click
+                    span.tag.is-aws AWS
+                  p A CLI tool that will deploy a directory to a webpage.
+                  p
+                    a(href='https://github.com/tacoda/webit')
+                      i(class='fas fa-code') &nbsp; Repository
+                  p.title.is-4 Requirements
+                  ul
+                    li Python 3
+                    li AWS CLI
+                  p.title.is-4 Install
+                  div.cli
+                    i.fas.fa-dollar-sign.prompt
+                    span.command pip3 install https://s3.amazonaws.com/tacoda-dist/webit/WebIt-0.1-py3-none-any.whl
+            div.column
+              img#gif(src='/images/webit.gif')
       div.columns
         div.column
           div.card
             div.card-content
               div.media-content
-                p.title.is-4 Shotty
+                p.title.is-2 Shotty
               div.content
-                p A command line tool for AWS EC2 volume snapshots.
+                div.tags
+                  span.tag.is-python Python
+                  span.tag.is-dark Click
+                  span.tag.is-aws AWS
+                p A CLI tool for AWS EC2 volume snapshots.
                 p
                   a(href='https://github.com/tacoda/shotty')
                     i(class='fas fa-code') &nbsp; Repository
+                p.title.is-4 Requirements
+                  ul
+                    li Python 3
+                    li AWS CLI
+                  p.title.is-4 Install
+                  div.cli
+                    i.fas.fa-dollar-sign.prompt
+                    span.command pip3 install https://s3.amazonaws.com/tacoda-dist/shotty/shotty-0.1-py3-none-any.whl
         div.column
-          div.card
-            div.card-content
-              div.media-content
-                p.title.is-4 WebIt
-              div.content
-                p A command line tool that will deploy a directory to a webpage.
-                p
-                  a(href='https://github.com/tacoda/webit')
-                    i(class='fas fa-code') &nbsp; Repository
+          img(src='/images/webit.gif')
+      div.columns
         div.column
           div.card
             div.card-content
               div.media-content
                 p.title.is-4 Jaws
               div.content
-                p A command line tool to perform tasks with AWS.
+                div.tags
+                  span.tag.is-rust Rust
+                  span.tag.is-light StructOpt
+                  span.tag.is-aws AWS
+                p A CLI tool to perform tasks with AWS.
                 p
                   a(href='https://github.com/tacoda/jaws')
                     i(class='fas fa-code') &nbsp; Repository
@@ -47,6 +81,13 @@ block content
               div.media-content
                 p.title.is-4 Roarum
               div.content
+                div.tags
+                  span.tag.is-ruby Ruby
+                  span.tag.is-rails Rails
+                  span.tag.is-js JavaScript
+                  span.tag.is-react React
+                  span.tag.is-heroku Heroku
+                hr
                 p An online community forum built with Rails.
                 p
                   a(href='https://github.com/tacoda/roarum')
@@ -60,7 +101,15 @@ block content
               div.media-content
                 p.title.is-4 Bingo
               div.content
-                p An online bingo game built with Elixir.
+                div.tags
+                  span.tag.is-elixir Elixir
+                  span.tag.is-phoenix Phoenix
+                  span.tag.is-light OTP
+                  span.tag.is-js JavaScript
+                  span.tag.is-vue Vue
+                  span.tag.is-heroku Heroku
+                hr
+                p An online bingo game built with Phoenix and Vue.
                 p
                   a(href='https://github.com/tacoda/bingo')
                     i(class='fas fa-code') &nbsp; Repository
@@ -71,9 +120,158 @@ block content
           div.card
             div.card-content
               div.media-content
+                p.title.is-4 Jot
+              div.content
+                div.tags
+                  span.tag.is-php PHP
+                  span.tag.is-laravel Laravel
+                  span.tag.is-js JavaScript
+                  span.tag.is-vue Vue
+                  span.tag.is-heroku Heroku
+                hr
+                p An online blogging platform built with Laravel.
+                p
+                  a(href='https://github.com/tacoda/jot')
+                    i(class='fas fa-code') &nbsp; Repository
+                p
+                  a(href='https://sleepy-river-37473.herokuapp.com/')
+                    i(class='fas fa-link') &nbsp; Link
+      div.columns
+        div.column
+          div.card
+            div.card-content
+              div.media-content
+                p.title.is-4 Text Editor
+              div.content
+                div.tags
+                    span.tag.is-ruby Ruby
+                hr
+                p A terminal-based text editor.
+                p
+                  a(href='https://github.com/tacoda/das-text-editor')
+                    i(class='fas fa-code') &nbsp; Repository
+        div.column
+          div.card
+            div.card-content
+              div.media-content
+                p.title.is-4 Web Framework
+              div.content
+                div.tags
+                    span.tag.is-ruby Ruby
+                hr
+                p A Rails-like web framework.
+                p
+                  a(href='https://github.com/tacoda/das-web-framework')
+                    i(class='fas fa-code') &nbsp; Repository
+        div.column
+          div.card
+            div.card-content
+              div.media-content
+                p.title.is-4 Test Framework
+              div.content
+                div.tags
+                    span.tag.is-ruby Ruby
+                hr
+                p An Rspec-inspired testing framework.
+                p
+                  a(href='https://github.com/tacoda/das-test-framework')
+                    i(class='fas fa-code') &nbsp; Repository
+      div.columns
+        div.column
+          div.card
+            div.card-content
+              div.media-content
+                p.title.is-4 Shell
+              div.content
+                div.tags
+                    span.tag.is-ruby Ruby
+                hr
+                p A tty shell.
+                p
+                  a(href='https://github.com/tacoda/das-shell')
+                    i(class='fas fa-code') &nbsp; Repository
+        div.column
+          div.card
+            div.card-content
+              div.media-content
+                p.title.is-4 Hangman
+              div.content
+                div.tags
+                    span.tag.is-elixir Elixir
+                    span.tag.is-phoenix Phoenix
+                    span.tag.is-light OTP
+                    span.tag.is-js JavaScript
+                    span.tag.is-aws AWS
+                hr
+                p An online hangman game.
+                p
+                  a(href='https://github.com/tacoda/hangman')
+                    i(class='fas fa-code') &nbsp; Repository
+                p
+                  a(href='/')
+                    i(class='fas fa-link') &nbsp; Link
+        div.column
+          div.card
+            div.card-content
+              div.media-content
+                p.title.is-4 Game of Life
+              div.content
+                div.tags
+                    span.tag.is-rust Rust
+                    span.tag.is-wasm WebAssembly
+                    span.tag.is-aws AWS
+                hr
+                p Conway's Game of Life implemented in Web Assembly.
+                p
+                  a(href='https://github.com/tacoda/wasm-game-of-life')
+                    i(class='fas fa-code') &nbsp; Repository
+                p
+                  a(href='/')
+                    i(class='fas fa-link') &nbsp; Link
+      div.columns
+        div.column
+          div.card
+            div.card-content
+              div.media-content
+                p.title.is-4 grrs
+              div.content
+                div.tags
+                    span.tag.is-rust Rust
+                    span.tag.is-light StructOpt
+                hr
+                p A grep clone.
+                p
+                  a(href='https://github.com/tacoda/grrs')
+                    i(class='fas fa-code') &nbsp; Repository
+        div.column
+          div.card
+            div.card-content
+              div.media-content
+                p.title.is-4 rwc
+              div.content
+                div.tags
+                    span.tag.is-rust Rust
+                    span.tag.is-light StructOpt
+                hr
+                p A wc clone.
+                p
+                  a(href='https://github.com/tacoda/rwc')
+                    i(class='fas fa-code') &nbsp; Repository
+      div.columns
+        div.column
+          div.card
+            div.card-content
+              div.media-content
                 p.title.is-4 Palindrome
               div.content
-                p A cloud function that determines if the input is a palindrome.
-                div
-                  input.input(type='text')
-                  button.button#palindrome Check
+                div.tags
+                    span.tag.is-ruby Ruby
+                    span.tag.is-light Lambda
+                    span.tag.is-aws AWS
+                hr
+                p A lambda function that determines if the input is a palindrome.
+                div.field.has-addons
+                  p.control
+                    input.input#palindrome-text(type='text' placeholder='racecar')
+                  p.control
+                    button.button#palindrome Check

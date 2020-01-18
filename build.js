@@ -40,6 +40,23 @@ sass.render({file: 'style.scss'}, function(error, result) {
   }
 });
 
+fs.copyFile('script.js', 'public/assets/script.js', (err) => {
+  if (err) throw err;
+  console.log('Created: public/assets/script.js');
+});
+
+var imagesDir = './public/images';
+
+if(!fs.existsSync(imagesDir)) {
+    fs.mkdirSync(imagesDir);
+    console.log('Created: public/images/');
+}
+
+fs.copyFile('images/webit.gif', 'public/images/webit.gif', (err) => {
+  if (err) throw err;
+  console.log('Created: public/images/webit.gif');
+});
+
 var templates = './templates';
 
 fs.readdirSync(templates).forEach(file => {
