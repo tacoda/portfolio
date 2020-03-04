@@ -1,0 +1,8 @@
+language: node_js
+node_js:
+  - 7
+jobs:
+  include:
+    - stage: build
+      before_script: npm install
+      script: npm build
