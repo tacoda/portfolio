@@ -3,8 +3,10 @@ node_js:
   - 7
 install:
   - npm install
+    skip_cleanup: true
 script:
   - npm build
+    skip_cleanup: true
 deploy:
   provider: pages
   skip_cleanup: true
